@@ -11,35 +11,35 @@
     <div>
         <h2>Encuesta de Cine: Nominadas al Oscar 2018</h2>
         <form action="formulario1" name="formulario1" method="post" action="data.php" >
-            <fieldset id ="datos_personales" >
-                <legend >Datos Personales</legend>
-                <label for="nombre">Nombre</label> <br>
-                <input type="text" name="nombre" id="nombre" > <br>
+            <fieldset id ="datos_personales" style="width: 50%;" >
+                <legend>Datos Personales</legend>
+                <label for="nombre" >Nombre &nbsp;</label> 
+                <input type="text" name="nombre" id="nombre" > <br> <br>
 
-                <label for="apellido">Apellido</label> <br>
-                <input type="text" name="apellido" id="apellido"> <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido"> <br> <br>
                 
-                <label for="dni">DNI</label> <br>
-                <input type="text" name="dni" id="dni" maxlength="9"> <br>
+                <label for="dni">DNI</label>
+                <input type="text" name="dni" id="dni" maxlength="9"> <br> <br>
 
-                <label for="edad">Edad</label> <br>
-                <input type="text" name="edad" id="edad" size="2" maxlength="2"> <br>
+                <label for="edad">Edad</label>
+                <input type="text" name="edad" id="edad" size="2" maxlength="2"> <br> <br>
 
-                <label for="sexo">Sexo</label> <br>
+                <label for="sexo">Sexo</label> 
                 <select name="sexo">
                     <option value="masculino" selected>Masculino</option>
                     <option value="femenino" >Femenino</option>
                 </select>
             </fieldset> <br>
 
-            <fieldset id="mejor_pelicula">
+            <fieldset id="mejor_pelicula" style="width: 50%">
                 <legend>Mejor Película</legend>
                 <input type="radio" name="pelicula" value="1"> Call Me By Your Name <br>
                 <input type="radio" name="pelicula" value="2"> Dunkerque <br>
                 <input type="radio" name="pelicula" value="3"> Déjame salir <br>
             </fieldset> <br>
 
-            <fieldset id="pelicula_no_vista">
+            <fieldset id="pelicula_no_vista" style="width: 50%">
                 <legend>Selecciona la película que no haya visto</legend>
                 <input type="checkbox" name="pelicula1" id="pelicula1"> Película 1 <br>
                 <input type="checkbox" name="pelicula2" id="pelicula2"> Película 2 <br>
@@ -48,7 +48,7 @@
                 <input type="checkbox" name="pelicula5" id="pelicula5"> Película 5 <br>
             </fieldset> <br>
 
-            <fieldset id="grupo_argumento">
+            <fieldset id="grupo_argumento" style="width: 50%">
                 <legend>Argumento de tu película preferida</legend>
                 <textarea name="argumento" id="argumento" cols="50" rows="14"></textarea>
             </fieldset>
