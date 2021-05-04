@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang ="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="view port" content="width=device=width, initial-scale=1.0">
+    <title>Encuesta Cinematográfica</title>
+</head>
+
+<body>
+    <div>
+        <h2>Encuesta de Cine: Nominadas al Oscar 2018</h2>
+        <form action="formulario1" name="formulario1" method="post" action="data.php" >
+            <fieldset id ="datos_personales" style="width: 50%;" >
+                <legend>Datos Personales</legend>
+                <label for="nombre" >Nombre &nbsp;</label> 
+                <input type="text" name="nombre" id="nombre" > <br> <br>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido"> <br> <br>
+                
+                <label for="dni">DNI</label>
+                <input type="text" name="dni" id="dni" maxlength="9"> <br> <br>
+
+                <label for="edad">Edad</label>
+                <input type="text" name="edad" id="edad" size="2" maxlength="2"> <br> <br>
+
+                <label for="sexo">Sexo</label> 
+                <select name="sexo">
+                    <option value="masculino" selected>Masculino</option>
+                    <option value="femenino" >Femenino</option>
+                </select>
+            </fieldset> <br>
+
+            <fieldset id="mejor_pelicula" style="width: 50%">
+                <legend>Mejor Película</legend>
+                <input type="radio" name="pelicula" value="1"> Call Me By Your Name <br>
+                <input type="radio" name="pelicula" value="2"> Dunkerque <br>
+                <input type="radio" name="pelicula" value="3"> Déjame salir <br>
+            </fieldset> <br>
+
+            <fieldset id="pelicula_no_vista" style="width: 50%">
+                <legend>Selecciona la película que no haya visto</legend>
+                <input type="checkbox" name="pelicula1" id="pelicula1"> Película 1 <br>
+                <input type="checkbox" name="pelicula2" id="pelicula2"> Película 2 <br>
+                <input type="checkbox" name="pelicula3" id="pelicula3"> Película 3 <br>
+                <input type="checkbox" name="pelicula4" id="pelicula4"> Película 4 <br>
+                <input type="checkbox" name="pelicula5" id="pelicula5"> Película 5 <br>
+            </fieldset> <br>
+
+            <fieldset id="grupo_argumento" style="width: 50%">
+                <legend>Argumento de tu película preferida</legend>
+                <textarea name="argumento" id="argumento" cols="50" rows="14"></textarea>
+            </fieldset>
+            <br>
+            <input type="reset" value="Borrar Formulario"> <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
